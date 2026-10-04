@@ -35,9 +35,9 @@ test('head có lang, meta, Open Graph, font và tài nguyên', () => {
   assert.match(html, /<script src="js\/gallery\.js" defer><\/script>/);
 });
 
-test('có 3 section vợt mẫu với id vot-1..vot-3, không trùng', () => {
+test('có 7 section vợt với id vot-1..vot-7, không trùng', () => {
   const ids = sections.map(idOf);
-  assert.deepEqual(ids, ['vot-1', 'vot-2', 'vot-3']);
+  assert.deepEqual(ids, ['vot-1', 'vot-2', 'vot-3', 'vot-4', 'vot-5', 'vot-6', 'vot-7']);
   assert.equal(new Set(ids).size, ids.length);
 });
 
@@ -121,7 +121,7 @@ test('hero và footer', () => {
 });
 
 test('folder ảnh và README tồn tại', () => {
-  for (const n of [1, 2, 3]) {
+  for (const n of [1, 2, 3, 4, 5, 6, 7]) {
     assert.ok(existsSync(new URL(`images/vot-${n}/.gitkeep`, root)), `thiếu images/vot-${n}/.gitkeep`);
   }
   const readme = read('README.md');

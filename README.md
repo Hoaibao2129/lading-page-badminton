@@ -1,6 +1,6 @@
-# 🏸 Vợt Review
+# 🏸 Vợt Cầu Lông
 
-Landing page tĩnh review vợt cầu lông. HTML/CSS thuần, không cần cài đặt hay build.
+Landing page tĩnh giới thiệu một số dòng vợt cầu lông. HTML/CSS thuần, không cần cài đặt hay build.
 
 ## Chạy thử
 
@@ -22,7 +22,7 @@ tests/            # test tự động + script chụp màn hình
 2. Đổi `vot-1` thành `vot-N` (N là số tiếp theo) ở 4 chỗ: `id`, `aria-labelledby`, `id` của thẻ `h2`, đường dẫn ảnh.
 3. Thêm `<a href="#vot-N">Tên vợt</a>` vào menu `site-nav` ở đầu trang.
 4. Tạo folder `images/vot-N/` rồi bỏ ảnh vào.
-5. Sửa tên, mô tả, giá, thông số, ưu/nhược, link mua, link video.
+5. Sửa tên, mô tả, giá, thông số, ưu/nhược, link mua, link video; nhớ đổi cả tên vợt trong `aria-label` của gallery và 5 thẻ `alt` của ảnh.
 
 Xoá vợt: xoá section và dòng menu tương ứng.
 
@@ -38,7 +38,7 @@ Xoá vợt: xoá section và dòng menu tương ứng.
 
 ```bash
 node --test "tests/*.test.mjs"   # test cấu trúc HTML/CSS/JS (cần Node 18+)
-bash tests/screenshot.sh         # chụp trang ở 375/768/1280px vào ./screenshots
+bash tests/screenshot.sh         # chụp vào ./screenshots: page-375, page-768, page-1280 và page-1280-nojs (tắt JS)
 ```
 
 ## Deploy lên Vercel

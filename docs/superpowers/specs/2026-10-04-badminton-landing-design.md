@@ -1,11 +1,11 @@
-# Landing page review vợt cầu lông — Design Spec
+# Landing page giới thiệu vợt cầu lông — Design Spec
 
 - **Ngày:** 2026-10-04
 - **Trạng thái:** Chờ duyệt
 
 ## 1. Mục tiêu
 
-Một landing page tĩnh, giọng blog review cá nhân, giới thiệu một số vợt cầu lông (dự kiến 3–6 cây) để chia sẻ cho bạn bè/cộng đồng. Link mua có thể là link affiliate. Deploy lên Vercel.
+Một landing page tĩnh, giọng giới thiệu thân thiện (không phải review đồ đã dùng), giới thiệu một số dòng vợt cầu lông (dự kiến 3–6 cây) để chia sẻ cho bạn bè/cộng đồng. Link mua có thể là link affiliate. Deploy lên Vercel.
 
 **Tiêu chí thành công**
 
@@ -57,7 +57,7 @@ Ban đầu chưa có ảnh thật. Các folder ảnh được giữ trong git b�
 ## 4. Bố cục trang
 
 1. **Header dính (sticky):** tên trang bên trái, menu anchor tới từng vợt (`#vot-1`, …). Trên mobile, menu xuống dòng dưới logo thành một dải cuộn ngang (không dùng hamburger, không cần JS).
-2. **Hero:** tiêu đề lớn, 1–2 câu giới thiệu, ảnh `images/hero.webp`.
+2. **Hero:** tiêu đề lớn "Một số dòng vợt cầu lông đáng tham khảo" (không có dòng eyebrow), 1–2 câu giới thiệu, ảnh `images/hero.webp`.
 3. **Các section vợt:** 3 section mẫu với nội dung placeholder, nền xen kẽ trắng và xám nhạt.
 4. **Footer:** ghi chú "giá tham khảo tại thời điểm viết", dòng công khai link affiliate, năm.
 
